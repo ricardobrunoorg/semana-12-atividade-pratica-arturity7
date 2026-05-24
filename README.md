@@ -5,12 +5,13 @@ Nesta atividade, vamos trabalhar com uma API de mercado para montar uma interfac
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
+- Nome: Arthur Gabriel de Oliveira Fonseca Santos
+- Matricula: 924860
 
 ## Prints do trabalho
 
-<<  COLOQUE A IMAGEM - LISTA DE CARDS COM FILMES - AQUI >>
+![Lista filmes](/public/1.png)
 
-<<  COLOQUE A IMAGEM - RESULTADO DE UMA PESQUISA - AQUI >>
+![Resultado pesquisa](/public/2.png)
 
+Este projeto utiliza a Fetch API para realizar requisições assíncronas à The Movie Database (TMDB), buscando dados reais de filmes. Os dados retornados em JSON são processados e renderizados dinamicamente no DOM em formato de cards, com suporte a pesquisa por título e filtro por categorias.

@@ -1,13 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todos os Itens</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineScope — Catálogo de Filmes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
+
+  <!-- GRAIN OVERLAY -->
+  <div class="grain"></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">CineScope</span>
+      </div>
+      <p class="header-tagline">Descubra os melhores filmes do mundo</p>
+    </div>
+  </header>
+
+  <!-- CONTROLS -->
+  <section class="controls-section">
+    <div class="controls-inner">
+
+      <!-- SEARCH -->
+      <div class="search-wrapper">
+        <span class="search-icon">⌕</span>
+        <input id="search" type="text" placeholder="Buscar filme por título..." autocomplete="off" />
+        <button id="btnSearch">Buscar</button>
+      </div>
+
+      <!-- FILTER TABS -->
+      <div class="filter-tabs">
+        <button class="tab active" data-endpoint="popular">🔥 Populares</button>
+        <button class="tab" data-endpoint="top_rated">⭐ Mais Bem Avaliados</button>
+        <button class="tab" data-endpoint="now_playing">🎬 Em Cartaz</button>
+        <button class="tab" data-endpoint="upcoming">🗓 Em Breve</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MESSAGE -->
+  <p id="message"></p>
+
+  <!-- MOVIE GRID -->
+  <main>
+    <div id="movie-list"></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Dados fornecidos por <a href="https://www.themoviedb.org/" target="_blank">The Movie Database</a></p>
+    <p class="footer-logo">◈ CineScope</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

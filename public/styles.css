@@ -475,4 +475,4 @@ footer a:hover { color: var(--gold); }
   #movie-list {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+}s

@@ -365,6 +365,7 @@ main {
   color: var(--text-primary);
   /* clamp to 2 lines */
   display: -webkit-box;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -381,6 +382,7 @@ main {
   color: var(--text-muted);
   line-height: 1.5;
   display: -webkit-box;
+  line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -475,4 +477,4 @@ footer a:hover { color: var(--gold); }
   #movie-list {
     grid-template-columns: repeat(2, 1fr);
   }
-}s
+}
